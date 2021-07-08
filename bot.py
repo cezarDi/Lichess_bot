@@ -134,7 +134,6 @@ ADMIN_COMMANDS = ["/ban", "/banlist"]  # , "/stop", "/run"]
 
 @bot.message_handler(content_types=['text'])
 def get_text_messages(message):
-    bot.message_handler(content_types=['text'])
     # print(message.text.split()[0])
     if message.text.split()[0] in ADMIN_COMMANDS:
         if message.from_user.id in admin.USERS_IN_BAN:
